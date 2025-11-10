@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+#okno{
+    height: 340px;
+    width: 356px;
+    margin: 50px 0 0 0;
+    padding: 24px;
+    border: 1px solid #ebebeb;
+    border-radius: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .04);
+}
+#ikonaSnap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+div #ikona{
+    height: 60px;
+    width: 60px;    
+}
+div #text{
+    padding-top: 20px 0px;
+    overflow: hidden;
+    display: inline;
+    font: 28px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+div #info{
+   width: 100%;
+   font: 13px;
+   font-family: 'Nunito', sans-serif;
+   color: rgb(101 107 115);   
+}
+div #uporabnisko{
+    padding-top: 10px;
+}
+#upoMail{
+}
