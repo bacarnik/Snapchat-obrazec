@@ -2,10 +2,6 @@
     margin: 0px;
     padding: 0px;
 }
-body{
-    display: flex;
-    justify-content: center;
-}
 #stran{
     width: 100%;
     height: 100vh;
@@ -32,14 +28,15 @@ div #ikona{
     width: 60px;    
 }
 div #text{
-    font: 28px;
+    padding-top: 20px;
+    font-size: 25px;
     font-family: 'Nunito', sans-serif;
     text-align: center;
 }
 div #info{
     padding-top: 30px;
     width: 100%;
-        height: 35%;
+    height: 30%;
     font: 13px;
     font-family: 'Nunito', sans-serif;
     color: rgb(101 107 115);   
@@ -56,6 +53,9 @@ div #uporabnisko{
     padding: 5px 10px;
     border-radius: 5px;
 }
+#upoMail:hover{
+    border: 1px solid #eecc0e;
+}
 #telLink{
     display: flex;
     justify-content: center;
@@ -65,6 +65,13 @@ div #uporabnisko{
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     color: #0ea0ee;
+}
+#telSt:hover{
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    color: #0ea0ee;
+    cursor: pointer;
 }
 #gumbContainer{
     padding-top: 15px;
@@ -85,4 +92,30 @@ div #uporabnisko{
     text-align: center;
     font-size: 15px;
     font-family: 'Nunito', sans-serif;
+}
+.klikniLink:hover{
+    cursor: pointer;
+}
+#noga{
+    width: 100%;
+    height: 300px;
+    margin-top: 15%;
+    padding: 20px 0 0 0;
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+}
+.stolpec{
+    width: 15%; height: auto;
+}
+.glava{
+    padding-bottom: 10px;
+}
+.vsebina{
+    line-height: 20px;
+}
+#glavaLanguage{
+    padding: 50px 0 20px;
 }
