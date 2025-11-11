@@ -116,6 +116,9 @@ div #uporabnisko{
 .vsebina{
     line-height: 20px;
 }
+.vsebina:hover{
+    cursor: pointer;
+}
 #glavaLanguage{
     padding: 50px 0 20px;
 }
