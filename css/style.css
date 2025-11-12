@@ -2,12 +2,16 @@
     margin: 0px;
     padding: 0px;
 }
+html, body{
+    height: 100%;
+}
 #stran{
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center; 
+    flex-grow: 1;
+    box-sizing: border-box;
 }
 #okno{
     height: 290px;
@@ -98,17 +102,25 @@ div #uporabnisko{
 }
 #noga{
     width: 100%;
-    height: 300px;
-    margin-top: 15%;
-    padding: 20px 0 0 0;
+    height: 230px;
+    padding: 20px 0 20px;
     background-color: rgb(247, 247, 247);
     display: flex;
     justify-content: center;
+    align-items: center;
     font-family: 'Nunito', sans-serif;
     font-size: 15px;
 }
+#vsebinaNoge{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
 .stolpec{
-    width: 15%; height: auto;
+    width: 15%;
+    height: 100%;
+    
 }
 .glava{
     padding-bottom: 10px;
@@ -120,5 +132,22 @@ div #uporabnisko{
     cursor: pointer;
 }
 #glavaLanguage{
-    padding: 50px 0 20px;
+    padding: 30px 0 10px;
+}
+#jeziki {
+  width: 220px;
+  height: 36px;
+  padding: 6px 10px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  color: #333;
+  border: 1px solid #d1d1d1;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="%23666"><polygon points="0,0 10,0 5,5"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px;
+  cursor: pointer;
 }
