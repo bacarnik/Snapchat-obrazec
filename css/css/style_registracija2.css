@@ -1,0 +1,159 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#stran{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    flex-grow: 1;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+#okno{
+    height: 825px;
+    width: 500px;
+    margin: 50px 0 50px 0;
+    padding: 24px;
+    border: 1px solid #ebebeb;
+    border-radius: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .04);
+}
+/*  od tle  */
+#signUpZgoraj{
+    height: 100%;
+    width: 100%;
+}
+#nadOr{
+    width: 100%;
+    height: 20%;
+}
+#ikonaContainer{
+    width: 100%;
+    display: flex;              
+    align-items: center;        
+    gap: 10px;
+    margin-bottom: 20px;
+}
+#ikona, #ikona img{
+    width: 50px;
+    height: 50px;
+}
+#ikonaContainer_desna{
+    display: flex;
+    flex-direction: column;     
+    justify-content: center;
+}
+#koraki{
+    color: rgb(101 107 115);
+    font-size: 15px;
+}
+
+/*od tle*/
+#inputContainer{
+    width: 100%;
+}
+#emailInput_text{
+    font-size: 15px;
+    font-weight: 600;
+    color: #525252;
+    margin-bottom: 10px;
+}
+#emailInputContainer{
+    width: 100%;
+}
+
+
+
+#gumbContainer{
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#gumbContinue{
+    width: 30%;
+    height: 40px;
+    padding: 5px;
+    border: 0px;
+    border-radius: 30px;
+    background-color: rgba(101, 107, 115, 0.473);
+    font: 15px;
+    color: white;
+}
+#gumbContinue:hover{
+    cursor: not-allowed;
+}
+/*do tle*/
+#noga{
+    width: 100%;
+    height: 230px;
+    padding: 20px 0 20px;
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+}
+#vsebinaNoge{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+.stolpec{
+    width: 15%;
+    height: 100%;    
+}
+.glava{
+    padding-bottom: 10px;
+}
+.vsebina{
+    line-height: 20px;
+}
+.vsebina:hover{
+    cursor: pointer;
+}
+#glavaLanguage{
+    padding: 30px 0 10px;
+}
+#jeziki {
+  width: 220px;
+  height: 36px;
+  padding: 6px 10px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  color: #333;
+  border: 1px solid #d1d1d1;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="%23666"><polygon points="0,0 10,0 5,5"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px;
+  cursor: pointer;
+}
+#spodnjiPas{
+    width: 100%;
+    height: 55px;
+    background-color: rgba(32, 32, 32, 0.945);
+}
+#spodnjiPasVsebina{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    padding-left: 20%;
+    padding-top: 20px;
+    gap: 30px; 
+}
+.gumb:hover{
+    cursor: pointer;
+}
