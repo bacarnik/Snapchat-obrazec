@@ -2,81 +2,42 @@
 <html>
     <head>
         <title>Sign up | Snapchat</title>
-        <link rel="stylesheet" href="css/style_registracija.css">
+        <link rel="stylesheet" href="css/style_registracija3.css">
         <link rel="icon" type="image/x-icon" href="slike/snapchat_logo.svg">
     </head>
     <body>
         <div id="stran">
-            <div id="okno">
-                <div id="signUpZgoraj">
-                    <div id="nadOr">
+            <div id="content">
+                <div id="okno">
+                    <div id="signUp">
                         <div id="ikonaContainer">
+                            <div id="ikonaPuscica"><a href="registracija2.html"><img src="slike/puscica_nazaj.svg"></a></div>
                             <div id="ikona"><img src="slike/snapchat-ikona-okrogla.svg"></div>
                             <div id="ikonaContainer_desna">
                                 <div id="naslov"><h1>Sign up</h1></div>
-                                <div id="koraki">Step 1 of 3</div>
+                                <div id="koraki">Step 3 of 3</div>
                             </div>
                         </div>
+    
+                        <span id="besediloSpan">We’ve sent a confirmation code to</span>
 
-                        <div id="googleLogin">
-                            <div id="googleLogin_text">Continue with Google</div>
-                            <div id="googleLogin_button">
-                                <div id="googleLogin_ikona"><img src="slike/google_ikona.svg"></div>
-                                <div id="googleLogin_prijava">Continue with google</div>
+                        <div id="inputContainer">
+                            <div id="code_text">Confirmation code <a href="" id="sendCode">Resend code</a></div>
+                            <div id="codeContainer">
+                                <form id="codeForm">
+                                    <input type="number" pattern="[0-9]" maxlength="1" class="stevilka">
+                                    <input type="number" pattern="[0-9]" maxlength="1" class="stevilka">
+                                    <input type="number" pattern="[0-9]" maxlength="1" class="stevilka">
+                                    <input type="number" pattern="[0-9]" maxlength="1" class="stevilka">
+                                    <input type="number" pattern="[0-9]" maxlength="1" class="stevilka">
+                                    <input type="number" pattern="[0-9]" maxlength="1" class="stevilka">
+                                </form>
                             </div>
                         </div>
-                    </div>
-                    <div id="or">
-                        <div class="hr_crta"><hr></div>
-                        <div id="text">OR</div>
-                        <div class="hr_crta"><hr></div>
-                    </div>
-
-                    <div id="signUpContainer">
-                        <form id="glavnaForma">
-                            <div class="imenaPolj">Name</div>
-                            <div class="vrstica">
-                                <input class="polovica" type="text" placeholder="First name" name="firstName">
-                                <input class="polovica" type="text" placeholder="Last name (optional)" name="lastName">
-                            </div>
-
-                            <div class="imenaPolj">Birthday</div>
-                            <div class="vrstica"><input type="date" name="datum" class="celaVrstica"></div>
-
-
-                            <div class="imenaPolj">Username</div>
-                            <div class="vrstica"><input type="text" name="username" placeholder="Enter your username" class="celaVrstica"></div>
-                            <span class="besediloSpan">You can change this later</span>
-                            
-                            <div class="imenaPolj">Password</div>
-                            <div class="vrstica"><input type="password" name="geslo" placeholder="Enter a secure password" class="celaVrstica"></div>
-                            <span class="besediloSpan">Password must be at least 8 characters</span>
-
-                            <div id="divBesedilo_zg">
-                                Snapchat is a <a href="">personalized</a>, <a href="">ad-funded service.</a> This means we will use data about you, your friends, our community, and information provided by advertisers and partners, including your activity on their websites and apps, to show you content and ads on Snapchat that we think you'll be interested in and measure the performance of those ads.
-                            </div>
-
-                            <div id="divBesedilo_sp">
-                                By tapping "Agree and continue" below, you agree to the <a href="">Terms of Service</a> and acknowledge that you have read the <a href="">Privacy Policy.</a>
-                            </div>
-
-                            <div id="gumbContainer"><button type="button" id="gumbContinue">Agree and continue</button></div>
-                            
-                            <hr id="spodnji_hr"> 
-
-                            <div id="signUpZgoraj_noga">
-                                <div id="containerDnoOkna">
-                                    <div id="leva">
-                                        <span class="besediloSpan">Already a member?</span>
-                                        <a class="linkNaDnu" href="login.html">Log in</a>
-                                    </div>
-                                    <div id="desna">
-                                        <span class="besediloSpan">Advertising on Snapchat?</span>
-                                        <a class="linkNaDnu" href="">Sign up for Ads manager</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+                        
+                        <div id="gumbContainer">
+                            <button type="submit" id="gumbContinue">Next</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -183,7 +144,6 @@
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
-        <script src="scripts/preveriGeslo.js" defer></script>
-        <script src="scripts/registracija.js" defer></script>
+        <script src="scripts/registracija3.js" defer></script>
     </body>
 </html>

@@ -15,7 +15,7 @@ a{
     box-sizing: border-box;
 }
 #okno{
-    height: 290px;
+    height: auto;
     width: 306px;
     margin-top: 50px;
     padding: 24px;
@@ -38,40 +38,67 @@ div #text{
     font-family: 'Nunito', sans-serif;
     text-align: center;
 }
+#mailContainer{
+    width: auto;
+    height: 40px;
+    margin: 15px auto;
+    padding: 30px;
+    border: 1px solid rgb(231, 231, 231);
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mail{
+    width: 50%;
+    font-size: 15px;
+    font-weight: bold;
+}
+#notYou{ 
+    color: #0ea0ee;
+    font-size: 15px;
+    font-weight: bold;
+}
+#notYou:hover{ 
+    cursor: pointer;
+}
 div #info{
-    padding-top: 30px;
+    margin-top: 20px;
     width: 100%;
     height: 30%;
     font: 13px;
     font-family: 'Nunito', sans-serif;
     color: rgb(101 107 115);   
 }
-div #uporabnisko{
+div #gesloContainer{
     padding-top: 10px;
     width: 100%;
     height: 50px;
 }
-#upoMail{
+#gesloInput{
     border: 1px solid rgb(231, 231, 231);
     width: 92%;
     height: 35px;
     padding: 5px 10px;
     border-radius: 5px;
 }
-#upoMail:hover{
+#gesloInput:hover{
     border: 1px solid #eecc0e;
 }
-#telLink{
+#gesloLink{
     display: flex;
     justify-content: center;
 }
-#telSt{
+#pozabljenoGeslo{
+    margin-top: 10px;
     font-size: 15px;
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     color: #0ea0ee;
 }
-#telSt:hover{
+#pozabljenoGeslo:hover{
     font-size: 15px;
     font-family: 'Nunito', sans-serif;
     font-weight: bold;

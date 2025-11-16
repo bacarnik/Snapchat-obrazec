@@ -2,10 +2,6 @@
     margin: 0px;
     padding: 0px;
 }
-a{
-    text-decoration: none;
-    color: #0ea0ee;;
-}
 #stran{
     min-height: 100vh;
     width: 100%;
@@ -13,18 +9,25 @@ a{
     flex-direction: column;
     align-items: center; 
     flex-grow: 1;
+    box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
 }
-#okno{
-    height: 825px;
+#content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#okno {
+    height: auto;     
     width: 500px;
-    margin: 50px 0 50px;
+    margin: 50px 0;
     padding: 24px;
     border: 1px solid #ebebeb;
     border-radius: 3%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .04);
+    box-shadow: 0 4px 8px rgba(0,0,0,.04);
 }
-#signUpZgoraj{
+#signUp{
     height: 100%;
     width: 100%;
 }
@@ -39,6 +42,12 @@ a{
     gap: 10px;
     margin-bottom: 20px;
 }
+#ikonaPuscica, #ikonaPuscica img{
+    background-color: rgba(127, 129, 131, 0.144);
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+}
 #ikona, #ikona img{
     width: 50px;
     height: 50px;
@@ -52,99 +61,48 @@ a{
     color: rgb(101 107 115);
     font-size: 15px;
 }
-#googleLogin{
+
+/*od tle*/
+#inputContainer{
     width: 100%;
 }
-#googleLogin_text{
+#emailInput_text{
     font-size: 15px;
     font-weight: 600;
     color: #525252;
     margin-bottom: 10px;
 }
-#googleLogin_button{
-    margin: auto;
-    width: 85%;
-    height: 40px;
-    border: 2px solid #ebebeb;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-}
-#googleLogin_button:hover{
-    background-color: rgba(144, 207, 224, 0.199);
-    border: 2px solid rgba(76, 160, 199, 0.24);
-}
-#googleLogin_ikona, #googleLogin_ikona img{
-    margin-left: 4px;
-    width: 20px;
-    height: 20px;
-}
-#googleLogin_prijava{
+#emailInputContainer{
     width: 100%;
-    text-align: center;
-    font-weight: 600;
+}
+#emailInput{
+    width: 480px;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 10px;
     font-size: 15px;
-    color: #525252;
+    color: rgb(101 107 115);
+}
+#mailSelectorContainer{
+    width: 100%;
+    height: 25px;
+    margin-top: 10px;
+}
+#mailSelectorForm{
+    height: inherit;
+    width: 100%;
+}
+.mailGumbi{
+    width: auto;
+    height: 25px;
+    padding: 5px 10px;
+    font-size: 13px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgba(127, 129, 131, 0.144);
 }
 
-#or{
-    display: flex;
-    align-items: center;
-}
-.hr_crta{
-    width: 45%;
-}
-#text{
-    width: 10%;
-    font-size: 15px;
-    text-align: center;
-    color: #525252;
-}
-.imenaPolj{
-    font-size: 13px;
-    color: #000000;
-    padding: 10px 0 10px;
-}
-.vrstica{
-    width: 100%;
-    height: 45px;
-    display: flex;
-    padding-bottom: 10px;
-    gap: 10px;
-}
-.polovica{
-    width: 50%;
-    padding: 10px;
-    border: 1px solid rgb(231, 231, 231);
-    border-radius: 10px;
-    font-size: 15px;
-    color: rgb(101 107 115);;
-}
-.celaVrstica{
-    width: 100%;
-    padding: 10px;
-    border: 1px solid rgb(231, 231, 231);
-    border-radius: 10px;
-    font-size: 15px;
-    color: rgb(101 107 115);
-}
-.besediloSpan{
-    font-size: 12px;
-    color: rgb(101 107 115);
-    margin-bottom: 5px;
-}
-#divBesedilo_zg{
-    margin-top: 10px;
-    font-size: 12px;
-    color: rgb(101 107 115);
-    margin-bottom: 5px;
-}
-#divBesedilo_sp{
-    margin-top: 10px;
-    font-size: 12px;
-    color: rgb(101 107 115);
-    margin-bottom: 5px;
-}
 #gumbContainer{
     width: 100%;
     height: 50px;
@@ -166,43 +124,9 @@ a{
 #gumbContinue:hover{
     cursor: pointer;
 }
-#spodnji_hr {
-    width: calc(100% + 48px); 
-    margin: 20px 0 10px -24px;
-    border: 1px solid #e0e0e0; 
-}
-#signUpZgoraj_noga{
-    width: 100%;
-    height: 50px;
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#containerDnoOkna{
-    display: flex;
-    gap: 40px;
-}
-#leva{
-    display: flex;
-    flex-direction: column;
-}
-#desna{
-    display: flex;
-    flex-direction: column;
-}
-.linkNaDnu{
-    font-size: 12px;
-    color: #0ea0ee;
-    text-decoration: none;
-}
-.linkNaDnu:hover{
-    cursor: pointer;
-}
 #noga{
     width: 100%;
     height: 230px;
-    margin-top: auto;
     padding: 20px 0 20px;
     background-color: rgb(247, 247, 247);
     display: flex;
