@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
                 Swal.fire({
                     icon: "success",
-                    title: "Čestite",
+                    title: "Čestitke",
                     text: "Uspešno si se registriral!"
                 });
             }
