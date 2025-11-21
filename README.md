@@ -1,1 +1,1 @@
-Snapchat login in registracija za 1. projektno nalogo
+Replica of Snapchat login form
