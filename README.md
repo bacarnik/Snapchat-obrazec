@@ -22,6 +22,7 @@ Its only front-end and doesn't save any data or sends it to any database.
 ├── registracija.html
 ├── registracija2.html
 └── registracija3.html
+```
 
 # Login form:
 <img width="1919" height="1065" alt="image" src="https://github.com/user-attachments/assets/c618eb6f-b2eb-443b-a484-920077ebf9f2" />
