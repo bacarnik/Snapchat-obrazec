@@ -5,7 +5,7 @@ It includes javaScript(sweetAlert, password check, mail check...), CSS, html cod
 Its only front-end and doesn't save any data or sends it to any database.
 
 
-# Hierarhija:
+# Hierarchy:
 ```
 📁 Snapchat
 ├── 📁 css
