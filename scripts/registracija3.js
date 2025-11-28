@@ -41,12 +41,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (!vsiPolni) {
                 Swal.fire({
+                    confirmButtonColor: "#0ea0ee",
                     icon: "warning",
                     title: "Pozor",
                     text: "Prosim izpolni vse številke!"
                 });
             } else {
                 Swal.fire({
+                    confirmButtonColor: "#0ea0ee",
                     icon: "success",
                     title: "Čestitke",
                     text: "Uspešno si se registriral!"

@@ -21,29 +21,34 @@ document.addEventListener("DOMContentLoaded", () => {
       const usernamePattern = /^[A-Za-z0-9]+$/; 
 
       if (!firstName) {
-        Swal.fire({ icon: "warning", title: "Napaka", text: "Vnesi ime!" });
+        Swal.fire({ 
+          confirmButtonColor: "#0ea0ee",
+          icon: "warning",
+          title: "Napaka",
+          text: "Vnesi ime!"
+         });
         return;
       }
       if (!usernameInput) {
-        Swal.fire({ icon: "warning", title: "Napaka", text: "Vnesi uporabniško ime!" });
+        Swal.fire({ confirmButtonColor: "#0ea0ee", icon: "warning", title: "Napaka", text: "Vnesi uporabniško ime!" });
         return;
       }
       if (!passwordInput) {
-        Swal.fire({ icon: "warning", title: "Napaka", text: "Vnesi geslo!" });
+        Swal.fire({ confirmButtonColor: "#0ea0ee", icon: "warning", title: "Napaka", text: "Vnesi geslo!" });
         return;
       }
       
       if (!birthday) {
-        Swal.fire({ icon: "warning", title: "Napaka", text: "Vnesi datum rojstva!" });
+        Swal.fire({ confirmButtonColor: "#0ea0ee", icon: "warning", title: "Napaka", text: "Vnesi datum rojstva!" });
         return;
       }
 
       if (usernameInput.length < 5) {
-        Swal.fire({ icon: "warning", title: "Napaka", text: "Uporabniško ime mora biti dolgo vsaj 5 znakov!" });
+        Swal.fire({ confirmButtonColor: "#0ea0ee", icon: "warning", title: "Napaka", text: "Uporabniško ime mora biti dolgo vsaj 5 znakov!" });
         return;
       }
       if (!usernamePattern.test(usernameInput)) {
-        Swal.fire({ icon: "warning", title: "Napaka", text: "Uporabniško ime lahko vsebuje samo črke in številke!" });
+        Swal.fire({ confirmButtonColor: "#0ea0ee", icon: "warning", title: "Napaka", text: "Uporabniško ime lahko vsebuje samo črke in številke!" });
         return;
       }
 
@@ -51,6 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (!validatePassword(passwordInput)) {
         Swal.fire({
+          confirmButtonColor: "#0ea0ee",
           icon: "error",
           title: "Slabo geslo",
           text: "Geslo mora imeti vsaj 8 znakov, male in velike črke ter številke."
@@ -69,6 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
       if (age < 18) {
         Swal.fire({
+          confirmButtonColor: "#0ea0ee",
           icon: "warning",
           title: "Napaka",
           text: "Za registracijo moraš biti starejši od 18 let!"

@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (tel === "" || !regex.test(tel)) {
             Swal.fire({
+                confirmButtonColor: "#0ea0ee",
                 icon: "error",
                 title: "Napaka",
                 text: "Vpiši samo številke in presledke.",

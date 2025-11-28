@@ -11,18 +11,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (input === "") {
             Swal.fire({
+                confirmButtonColor: "#0ea0ee",
                 icon: "warning",
                 title: "Napaka",
                 text: "Polje z uporabniškim imenom/mailom je prazno!",
             });
         } else if (input.length < 5) {
             Swal.fire({
+                confirmButtonColor: "#0ea0ee",
                 icon: "warning",
                 title: "Napaka",
                 text: "Vneseno uporabniško ime ali mail je prekratko!",
             });
         } else if (!(usernamePattern.test(input) || emailPattern.test(input))) {
             Swal.fire({
+                confirmButtonColor: "#0ea0ee",
                 icon: "warning",
                 title: "Napaka",
                 text: "Uporabniško ime ali mail vsebuje nedovoljene znake!",

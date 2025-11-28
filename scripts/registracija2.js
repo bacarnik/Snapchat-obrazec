@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (currentValue.length === 0) {
                 Swal.fire({
+                    confirmButtonColor: "#0ea0ee",
                     icon: "warning",
                     title: "Napaka",
                     text: "Najprej vnesi ime ali uporabniško ime, preden dodaš domeno."
@@ -21,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const validPattern = /^[A-Za-z0-9.@]*$/;
             if (!validPattern.test(currentValue)) {
                 Swal.fire({
+                    confirmButtonColor: "#0ea0ee",
                     icon: "warning",
                     title: "Napaka",
                     text: "Email lahko vsebuje samo črke, številke, piko in @."
@@ -43,6 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (value.length === 0) {
             Swal.fire({
+                confirmButtonColor: "#0ea0ee",
                 icon: "warning",
                 title: "Napaka",
                 text: "Vnesi email naslov."
@@ -52,6 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (!validPattern.test(value)) {
             Swal.fire({
+                confirmButtonColor: "#0ea0ee",
                 icon: "warning",
                 title: "Napaka",
                 text: "Email lahko vsebuje samo črke, številke, piko in @."
@@ -62,6 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const atCount = (value.match(/@/g) || []).length;
         if (atCount > 1) {
             Swal.fire({
+                confirmButtonColor: "#0ea0ee",
                 icon: "warning",
                 title: "Napaka",
                 text: "Email lahko vsebuje samo en znak @."

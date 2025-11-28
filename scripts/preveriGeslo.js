@@ -5,6 +5,7 @@ document.getElementById("gumbNext").addEventListener("click", () => {
     
     if (!validatePassword(geslo)) {
         Swal.fire({
+            confirmButtonColor: "#0ea0ee",
             icon: "error",
             title: "Slabo geslo",
             text: "Geslo mora imeti 8 znakov, male in velike črke ter številke."
