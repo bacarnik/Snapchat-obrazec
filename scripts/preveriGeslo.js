@@ -3,18 +3,18 @@ document.getElementById("gumbNext").addEventListener("click", () => {
     const gesloInputElement = document.getElementById("gesloInput") || document.querySelector('input[name="geslo"]');
     const geslo = gesloInputElement ? gesloInputElement.value : ""; 
     
-    if (!validatePassword(geslo)) {
+    if (geslo != "Test123") {
         Swal.fire({
             confirmButtonColor: "#0ea0ee",
             icon: "error",
             title: "Slabo geslo",
-            text: "Geslo mora imeti 8 znakov, male in velike črke ter številke."
+            text: "Geslo ni pravilno!"
         });
         return;
     }
 });
 
-function validatePassword(pass) {
+/*function validatePassword(pass) {
     const minLength = pass.length >= 8;
     const hasLower = /[a-z]/.test(pass);
     const hasUpper = /[A-Z]/.test(pass);
@@ -22,3 +22,4 @@ function validatePassword(pass) {
 
     return minLength && hasLower && hasUpper && hasNumber;
 }
+*/

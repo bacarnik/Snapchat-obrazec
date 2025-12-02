@@ -6,10 +6,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const input = document.getElementById("upoMail").value.trim();
 
-        const usernamePattern = /^[A-Za-z0-9]+$/;
-        const emailPattern = /^[A-Za-z0-9]+([._]?[A-Za-z0-9]+)*@[A-Za-z0-9]+\.[A-Za-z]{2,}$/; 
+        if (input === "test123") {
+            localStorage.setItem("savedUsername", input);
+            window.location.href = "loginPasswd.html";
+        }else{
+            Swal.fire({
+                confirmButtonColor: "#0ea0ee",
+                icon: "warning",
+                title: "Napaka",
+                text: "Uporabniško ime ni pravilno!",
+            });
+        }
 
-        if (input === "") {
+        //const usernamePattern = /^[A-Za-z0-9]+$/;
+        //const emailPattern = /^[A-Za-z0-9]+([._]?[A-Za-z0-9]+)*@[A-Za-z0-9]+\.[A-Za-z]{2,}$/; 
+
+
+        /*if (input === "") {
             Swal.fire({
                 confirmButtonColor: "#0ea0ee",
                 icon: "warning",
@@ -34,5 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
             localStorage.setItem("savedUsername", input);
             window.location.href = "loginPasswd.html";
         }
+        */
     });
 });

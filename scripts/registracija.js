@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       
 
-      if (!validatePassword(passwordInput)) {
+      /*if (!validatePassword(passwordInput)) {
         Swal.fire({
           confirmButtonColor: "#0ea0ee",
           icon: "error",
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
         return;
       }
-
+      */
     
       const birthDate = new Date(birthday);
       const today = new Date();

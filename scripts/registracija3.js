@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     title: "Čestitke",
                     text: "Uspešno si se registriral!"
                 });
+                window.location.href = "login.html";
             }
         });
     }
