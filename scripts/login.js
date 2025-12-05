@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const input = document.getElementById("upoMail").value.trim();
 
-        if (input === "test123") {
+        if (input === "test123" || input === "test123@gmail.com") {
             localStorage.setItem("savedUsername", input);
             window.location.href = "loginPasswd.html";
         }else{

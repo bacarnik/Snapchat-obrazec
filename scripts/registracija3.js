@@ -47,12 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     text: "Prosim izpolni vse številke!"
                 });
             } else {
-                Swal.fire({
-                    confirmButtonColor: "#0ea0ee",
-                    icon: "success",
-                    title: "Čestitke",
-                    text: "Uspešno si se registriral!"
-                });
                 window.location.href = "login.html";
             }
         });
